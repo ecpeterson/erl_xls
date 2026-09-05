@@ -18,6 +18,9 @@ compatibility scaffolding for an obsolete internal format.
   layer.
 - Give normalized data one authority. Recompute derived caches at a consumer
   boundary when checking them is inexpensive.
+- Avoid ultra-long string literals in the Erlang source wherever possible.
+  Instead, write separate DSLX modules and import them.  Make liberal use of
+  DSLX's parametricity to achieve this.
 
 ## Experimental formats and generated files
 
